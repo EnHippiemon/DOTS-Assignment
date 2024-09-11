@@ -1,6 +1,8 @@
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 
+[BurstCompile]
 public struct Spawner : IComponentData
 {
     public Entity Prefab;

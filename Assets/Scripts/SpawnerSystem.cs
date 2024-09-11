@@ -1,11 +1,16 @@
+using System.Runtime.InteropServices;
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
+[BurstCompile]
+[StructLayout(LayoutKind.Auto)]
 public partial struct SpawnerSystem : ISystem
 {
     private float _entityInWave;
 
+    [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
         foreach (var spawner in SystemAPI.Query<RefRW<Spawner>>())

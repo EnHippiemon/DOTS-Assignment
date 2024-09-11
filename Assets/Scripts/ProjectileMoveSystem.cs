@@ -2,6 +2,7 @@ using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
 
+[BurstCompile]
 public partial struct ProjectileMoveSystem : ISystem
 {
     [BurstCompile]

@@ -17,7 +17,7 @@ public partial struct FireProjectileSystem : ISystem
                 new float3(transform.Position.x, transform.Position.y + 0.5f, 0), /* using float 3 here is smartly done */
                 transform.Rotation, 
                 0.1f
-                );
+            );
             
             ecb.SetComponent(newProjectile, projectileTransform);
         }

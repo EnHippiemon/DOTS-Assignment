@@ -5,6 +5,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 
 [UpdateBefore(typeof(TransformSystemGroup))]
+[BurstCompile]
 public partial struct EnemyMoveSystem : ISystem
 {
     [BurstCompile]
